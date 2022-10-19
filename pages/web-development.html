@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/images/favicon/logo.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/images/favicon/logo.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/images/favicon/logo.png"
+    />
+    <link rel="manifest" href="../assets/images/favicon/logo.png" />
+    <link
+      rel="mask-icon"
+      href="../assets/images/favicon/logo.png"
+      color="#38bdf8"
+    />
+    <link rel="shortcut icon" href="../assets/images/favicon/logo.png" />
+    <!-- favicon -->
+    <title>Numohive</title>
+    <link rel="stylesheet" href="../assets/plugin/slick/slick.css" />
+    <link rel="stylesheet" href="../dist/output.css" />
+
+    <!-- phosphos icon -->
+    <script src="https://unpkg.com/phosphor-icons"></script>
+  </head>
+  <body>
+    <main id="main">
+      <!-- preloader section started   -->
+      <section id="preloader">
+        <div class="loading loading01">
+          <span>N</span>
+          <span>U</span>
+          <span>M</span>
+          <span>O</span>
+          <span>H</span>
+          <span>I</span>
+          <span>V</span>
+          <span>E</span>
+        </div>
+      </section>
+      <!-- preloader section ended   -->
+
+      <!-- re-design nav -->
+      <header
+        class="bg-[#F6FDFF] shadow-[0px_4px_32px_rgba(48,167,215,0.2)] nav"
+      >
+        <nav class="relative px-2 py-4">
+          <div class="container">
+            <div class="flex justify-between items-center">
+              <a href="./../index.html">
+                <img
+                  src="../assets/images/logo/logo.png"
+                  class="object-scale-down"
+                  alt=""
+                />
+              </a>
+              <ul class="hidden md:flex space-x-6">
+                <li>
+                  <a
+                    href="./../index.html"
+                    class="text-base font-normal leading-[22px] text-[#393e50] hover:text-[#30A7D7] ease-in-out duration-500"
+                    >HOME</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./about-us.html"
+                    class="active text-base font-normal leading-[22px] text-[#393e50] hover:text-[#30A7D7] ease-in-out duration-500"
+                    >ABOUT US</a
+                  >
+                </li>
+                <li class="flex relative group">
+                  <a
+                    href="#"
+                    class="mr-1 text-base font-normal leading-[22px] text-[#393e50] hover:text-[#30A7D7] ease-in-out duration-500"
+                    >SERVICES</a
+                  >
+                  <!-- Submenu starts -->
+                  <ul
+                    class="absolute bg-white p-3 w-52 top-6 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg flex items-start justify-center flex-col gap-4 rounded-[12px]"
+                  >
+                    <li
+                      class="text-base font-normal leading-[22px] text-[#393e50] hover:text-[#30A7D7] ease-in-out duration-500"
+                    >
+                      <a href="./web-development.html">Web Development</a>
+                    </li>
+                    <li
+                      class="text-base font-normal leading-[22px] text-[#393e50] hover:text-[#30A7D7] ease-in-out duration-500"
+                    >
+                      <a href="./email-marketing.html">Email Marketing</a>
+                    </li>
+                    <li
+                      class="text-base font-normal leading-[22px] text-[#393e50] hover:text-[#30A7D7] ease-in-out duration-500"
+                    >
+                      <a href="./video-marketing.html">Video Marketing</a>
+                    </li>
+                    <li
+                      class="text-base font-normal leading-[22px] text-[#393e50] hover:text-[#30A7D7] ease-in-out duration-500"
+                    >
+                      <a href="./seo.html">SEO</a>
+                    </li>
+                    <li
+                      class="text-base font-normal leading-[22px] text-[#393e50] hover:text-[#30A7D7] ease-in-out duration-500"
+                    >
+                      <a href="./social-media-marketing.html"
+                        >Social Marketing</a
+                      >
+                    </li>
+                    <li
+                      class="text-base font-normal leading-[22px] text-[#393e50] hover:text-[#30A7D7] ease-in-out duration-500"
+                    >
+                      <a href="./sms-marketing.html">SMS Marketing</a>
+                    </li>
+                  </ul>
+                  <!-- Submenu ends -->
+                </li>
+                <li>
+                  <a
+                    href="./case-studies.html"
+                    class="text-base font-normal leading-[22px] text-[#393e50] hover:text-[#30A7D7] ease-in-out duration-500"
+                    >CASE STUDIES</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./contact.html"
+                    class="text-base font-normal leading-[22px] text-[#393e50] hover:text-[#30A7D7] ease-in-out duration-500"
+                    >CONTACT</a
+                  >
+                </li>
+              </ul>
+              <!-- Mobile menu icon -->
+              <button id="mobile-icon" class="md:hidden">
+                <i
+                  onclick="changeIcon(this)"
+                  class="ph-list-bold before:!text-[#404040] !text-[#404040] text-2xl"
+                ></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Mobile menu -->
+          <div class="md:hidden flex justify-center w-full">
+            <div
+              id="mobile-menu"
+              class="mobile-menu absolute top-[65px] w-full bg-white shadow-lg leading-9 font-bold h-screen p-6"
+            >
+              <ul class="flex items-start justify-start flex-col gap-2">
+                <li
+                  class="border-b-2 border-white text-[#393e50] hover:text-[#30A7D7] font-normal text-sm leading-5"
+                >
+                  <a href="./../index.html" class="">HOME</a>
+                </li>
+                <li
+                  class="border-b-2 border-white text-[#393e50] hover:text-[#30A7D7] font-normal text-sm leading-5"
+                >
+                  <a href="./about-us.html" class="active">ABOUT US</a>
+                </li>
+                <li
+                  class="border-b-2 border-white text-[#393e50] hover:text-[#30A7D7] font-normal text-sm leading-5"
+                >
+                  <a href="#" class="">SERVICES </a>
+
+                  <!-- Submenu starts -->
+                  <ul
+                    class="border-l border-[#393E50] ml-4 px-4 items-start justify-start flex-col gap-4"
+                  >
+                    <li
+                      class="text-[#393e50] hover:text-[#30A7D7] font-normal text-sm leading-5"
+                    >
+                      <a class="" href="./web-development.html"
+                        >Web Development</a
+                      >
+                    </li>
+                    <li
+                      class="text-[#393e50] hover:text-[#30A7D7] font-normal text-sm leading-5"
+                    >
+                      <a class="" href="./email-marketing.html"
+                        >Email Marketing</a
+                      >
+                    </li>
+                    <li
+                      class="text-[#393e50] hover:text-[#30A7D7] font-normal text-sm leading-5"
+                    >
+                      <a class="" href="./video-marketing.html"
+                        >Video Marketing</a
+                      >
+                    </li>
+                    <li
+                      class="text-[#393e50] hover:text-[#30A7D7] font-normal text-sm leading-5"
+                    >
+                      <a class="" href="./seo.html">SEO</a>
+                    </li>
+                    <li
+                      class="text-[#393e50] hover:text-[#30A7D7] font-normal text-sm leading-5"
+                    >
+                      <a class="" href="./social-media-marketing.html"
+                        >Social Marketing</a
+                      >
+                    </li>
+                    <li
+                      class="text-[#393e50] hover:text-[#30A7D7] font-normal text-sm leading-5"
+                    >
+                      <a class="" href="./sms-marketing.html">SMS Marketing</a>
+                    </li>
+                  </ul>
+                  <!-- Submenu ends -->
+                </li>
+                <li
+                  class="border-b-2 border-white text-[#393e50] hover:text-[#30A7D7] font-normal text-sm leading-5"
+                >
+                  <a href="./case-studies.html" class="">CASE STUDIES</a>
+                </li>
+                <li
+                  class="border-b-2 border-white text-[#393e50] hover:text-[#30A7D7] font-normal text-sm leading-5"
+                >
+                  <a href="./contact.html" class="">CONTACT</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- re-design nav -->
+
+      <!-- hero section -->
+      <section class="about-hero py-4 md:py-16">
+        <div class="max-w-[1056px] mx-auto px-4">
+          <div class="grid grid-cols-12 gap-4">
+            <div class="title col-span-12">
+              <p
+                class="font-medium text-base lg:text-2xl leading-[24px] text-[rgba(57,62,80,0.4)] text-center"
+              >
+                Web Development
+              </p>
+              <h2
+                class="font-bold text-2xl md:text-[28px] lg:text-[64px] lg:leading-[96px] text-[#393E50] text-center mb-2 md:mb-10"
+              >
+                Optimize your business With our Ecommerce Theme
+              </h2>
+              <button
+                class="max-w-[305px] w-full mx-auto max-h-[44px] h-full bg-[#30A7D7] rounded-lg text-white hidden lg:block mb-16"
+              >
+                Get a Quote
+              </button>
+              <img
+                class="mx-auto"
+                src="../assets/images/web-development/hero.png"
+                alt=""
+              />
+
+              <button
+                class="max-w-[305px] w-full mx-auto max-h-[44px] h-full bg-[#30A7D7] rounded-lg text-white block lg:hidden"
+              >
+                Get a Quote
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- hero section -->
+
+      <!-- Social Media Advertising Services -->
+      <section class="py-4 md:py-16">
+        <div class="max-w-[1296px] mx-auto px-4">
+          <h2
+            class="font-bold text-xl md:text-3xl lg:text-[40px] leading-[60px] text-[#393e50] md:mb-6 text-center mb-16"
+          >
+            Website that we make
+          </h2>
+          <div class="grid grid-cols-12 ga-4">
+            <div
+              class="col-span-12 md:col-span-6 lg:col-span-4 text-center p-5 hover:bg-white hover:shadow-[0px_20px_40px_rgba(0,0,0,0.05)] hover:rounded-[20px]"
+            >
+              <span
+                class="icon w-10 md:w-[80px] h-10 md:h-[80px] bg-[#3C61C9] flex items-center justify-center rounded-lg md:rounded-[20px] mx-auto mb-4"
+              >
+                <svg
+                  class="w-[20px] md:w-[40px] h-[20px] md:h-[40px]"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M29.9702 0H23.1777C19.1468 0 14.6632 1.59556 14.6632 7.09464C14.6829 9.01072 14.6632 10.8458 14.6632 12.911H10V19.8948H14.8075V40H23.6416V19.7621H29.4724L30 12.8914H23.4894C23.4894 12.8914 23.504 9.83501 23.4894 8.94742C23.4894 6.77431 25.892 6.89875 26.0365 6.89875C27.1799 6.89875 29.4029 6.90189 29.9736 6.89875V0H29.9702Z"
+                    fill="white"
+                  />
+                </svg>
+              </span>
+              <h4
+                class="font-medium text-base md:text-2xl leading-9 text-[#393e50] mb-4"
+              >
+                Facebook Marketing
+              </h4>
+            </div>
+            <div
+              class="col-span-12 md:col-span-6 lg:col-span-4 text-center p-5 hover:bg-white hover:shadow-[0px_20px_40px_rgba(0,0,0,0.05)] hover:rounded-[20px]"
+            >
+              <span
+                class="icon w-10 md:w-[80px] h-10 md:h-[80px] bg-[#3C61C9] flex items-center justify-center rounded-lg md:rounded-[20px] mx-auto mb-4"
+              >
+                <svg
+                  class="w-[20px] md:w-[40px] h-[20px] md:h-[40px]"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1_17363)">
+                    <g clip-path="url(#clip1_1_17363)">
+                      <path
+                        d="M13.3349 20C13.3349 16.3182 16.3187 13.3328 20.0005 13.3328C23.6822 13.3328 26.6677 16.3182 26.6677 20C26.6677 23.6818 23.6822 26.6672 20.0005 26.6672C16.3187 26.6672 13.3349 23.6818 13.3349 20ZM9.73073 20C9.73073 25.672 14.3285 30.2698 20.0005 30.2698C25.6725 30.2698 30.2703 25.672 30.2703 20C30.2703 14.328 25.6725 9.73024 20.0005 9.73024C14.3285 9.73024 9.73073 14.328 9.73073 20ZM28.2768 9.32304C28.2766 9.79772 28.4172 10.2618 28.6807 10.6566C28.9443 11.0514 29.319 11.3591 29.7575 11.5409C30.196 11.7228 30.6785 11.7705 31.1441 11.6781C31.6097 11.5857 32.0374 11.3572 32.3732 11.0217C32.709 10.6862 32.9377 10.2587 33.0305 9.79316C33.1233 9.32764 33.076 8.84506 32.8945 8.40645C32.713 7.96783 32.4055 7.59288 32.011 7.32901C31.6164 7.06513 31.1524 6.92419 30.6778 6.924H30.6768C30.0405 6.9243 29.4304 7.17712 28.9804 7.62693C28.5304 8.07675 28.2774 8.68678 28.2768 9.32304ZM11.9205 36.2795C9.97057 36.1907 8.91073 35.8659 8.20641 35.5915C7.27265 35.228 6.60641 34.795 5.90593 34.0955C5.20545 33.396 4.77185 32.7304 4.40993 31.7966C4.13537 31.0926 3.81057 30.0325 3.72193 28.0826C3.62497 25.9744 3.60561 25.3411 3.60561 20.0002C3.60561 14.6592 3.62657 14.0277 3.72193 11.9178C3.81073 9.96784 4.13793 8.90976 4.40993 8.20368C4.77345 7.26992 5.20641 6.60368 5.90593 5.9032C6.60545 5.20272 7.27105 4.76912 8.20641 4.4072C8.91041 4.13264 9.97057 3.80784 11.9205 3.7192C14.0286 3.62224 14.6619 3.60288 20.0005 3.60288C25.3391 3.60288 25.973 3.62384 28.0829 3.7192C30.0328 3.808 31.0909 4.1352 31.797 4.4072C32.7307 4.76912 33.397 5.20368 34.0975 5.9032C34.7979 6.60272 35.2299 7.26992 35.5935 8.20368C35.868 8.90768 36.1928 9.96784 36.2815 11.9178C36.3784 14.0277 36.3978 14.6592 36.3978 20.0002C36.3978 25.3411 36.3784 25.9726 36.2815 28.0826C36.1926 30.0325 35.8662 31.0923 35.5935 31.7966C35.2299 32.7304 34.797 33.3966 34.0975 34.0955C33.3979 34.7944 32.7307 35.228 31.797 35.5915C31.093 35.8661 30.0328 36.1909 28.0829 36.2795C25.9747 36.3765 25.3414 36.3958 20.0005 36.3958C14.6595 36.3958 14.028 36.3765 11.9205 36.2795ZM11.7549 0.12112C9.62577 0.21808 8.17089 0.55568 6.90033 1.05008C5.58449 1.56064 4.47057 2.2456 3.35745 3.35696C2.24433 4.46832 1.56113 5.584 1.05057 6.89984C0.556168 8.1712 0.218568 9.62528 0.121608 11.7544C0.0230483 13.8869 0.000488281 14.5686 0.000488281 20C0.000488281 25.4314 0.0230483 26.1131 0.121608 28.2456C0.218568 30.3749 0.556168 31.8288 1.05057 33.1002C1.56113 34.4152 2.24449 35.5322 3.35745 36.643C4.47041 37.7539 5.58449 38.4379 6.90033 38.9499C8.17329 39.4443 9.62577 39.7819 11.7549 39.8789C13.8885 39.9758 14.5691 40 20.0005 40C25.4318 40 26.1136 39.9774 28.2461 39.8789C30.3754 39.7819 31.8293 39.4443 33.1007 38.9499C34.4157 38.4379 35.5304 37.7544 36.6435 36.643C37.7566 35.5317 38.4384 34.4152 38.9504 33.1002C39.4448 31.8288 39.784 30.3747 39.8794 28.2456C39.9763 26.1115 39.9989 25.4314 39.9989 20C39.9989 14.5686 39.9763 13.8869 39.8794 11.7544C39.7824 9.62512 39.4448 8.1704 38.9504 6.89984C38.4384 5.5848 37.7549 4.47008 36.6435 3.35696C35.5322 2.24384 34.4157 1.56064 33.1023 1.05008C31.8293 0.55568 30.3752 0.21648 28.2477 0.12112C26.1152 0.02416 25.4334 0 20.0021 0C14.5707 0 13.8885 0.02256 11.7549 0.12112Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M13.3349 20C13.3349 16.3182 16.3187 13.3328 20.0005 13.3328C23.6822 13.3328 26.6677 16.3182 26.6677 20C26.6677 23.6818 23.6822 26.6672 20.0005 26.6672C16.3187 26.6672 13.3349 23.6818 13.3349 20ZM9.73073 20C9.73073 25.672 14.3285 30.2698 20.0005 30.2698C25.6725 30.2698 30.2703 25.672 30.2703 20C30.2703 14.328 25.6725 9.73024 20.0005 9.73024C14.3285 9.73024 9.73073 14.328 9.73073 20ZM28.2768 9.32304C28.2766 9.79772 28.4172 10.2618 28.6807 10.6566C28.9443 11.0514 29.319 11.3591 29.7575 11.5409C30.196 11.7228 30.6785 11.7705 31.1441 11.6781C31.6097 11.5857 32.0374 11.3572 32.3732 11.0217C32.709 10.6862 32.9377 10.2587 33.0305 9.79316C33.1233 9.32764 33.076 8.84506 32.8945 8.40645C32.713 7.96783 32.4055 7.59288 32.011 7.32901C31.6164 7.06513 31.1524 6.92419 30.6778 6.924H30.6768C30.0405 6.9243 29.4304 7.17712 28.9804 7.62693C28.5304 8.07675 28.2774 8.68678 28.2768 9.32304ZM11.9205 36.2795C9.97057 36.1907 8.91073 35.8659 8.20641 35.5915C7.27265 35.228 6.60641 34.795 5.90593 34.0955C5.20545 33.396 4.77185 32.7304 4.40993 31.7966C4.13537 31.0926 3.81057 30.0325 3.72193 28.0826C3.62497 25.9744 3.60561 25.3411 3.60561 20.0002C3.60561 14.6592 3.62657 14.0277 3.72193 11.9178C3.81073 9.96784 4.13793 8.90976 4.40993 8.20368C4.77345 7.26992 5.20641 6.60368 5.90593 5.9032C6.60545 5.20272 7.27105 4.76912 8.20641 4.4072C8.91041 4.13264 9.97057 3.80784 11.9205 3.7192C14.0286 3.62224 14.6619 3.60288 20.0005 3.60288C25.3391 3.60288 25.973 3.62384 28.0829 3.7192C30.0328 3.808 31.0909 4.1352 31.797 4.4072C32.7307 4.76912 33.397 5.20368 34.0975 5.9032C34.7979 6.60272 35.2299 7.26992 35.5935 8.20368C35.868 8.90768 36.1928 9.96784 36.2815 11.9178C36.3784 14.0277 36.3978 14.6592 36.3978 20.0002C36.3978 25.3411 36.3784 25.9726 36.2815 28.0826C36.1926 30.0325 35.8662 31.0923 35.5935 31.7966C35.2299 32.7304 34.797 33.3966 34.0975 34.0955C33.3979 34.7944 32.7307 35.228 31.797 35.5915C31.093 35.8661 30.0328 36.1909 28.0829 36.2795C25.9747 36.3765 25.3414 36.3958 20.0005 36.3958C14.6595 36.3958 14.028 36.3765 11.9205 36.2795ZM11.7549 0.12112C9.62577 0.21808 8.17089 0.55568 6.90033 1.05008C5.58449 1.56064 4.47057 2.2456 3.35745 3.35696C2.24433 4.46832 1.56113 5.584 1.05057 6.89984C0.556168 8.1712 0.218568 9.62528 0.121608 11.7544C0.0230483 13.8869 0.000488281 14.5686 0.000488281 20C0.000488281 25.4314 0.0230483 26.1131 0.121608 28.2456C0.218568 30.3749 0.556168 31.8288 1.05057 33.1002C1.56113 34.4152 2.24449 35.5322 3.35745 36.643C4.47041 37.7539 5.58449 38.4379 6.90033 38.9499C8.17329 39.4443 9.62577 39.7819 11.7549 39.8789C13.8885 39.9758 14.5691 40 20.0005 40C25.4318 40 26.1136 39.9774 28.2461 39.8789C30.3754 39.7819 31.8293 39.4443 33.1007 38.9499C34.4157 38.4379 35.5304 37.7544 36.6435 36.643C37.7566 35.5317 38.4384 34.4152 38.9504 33.1002C39.4448 31.8288 39.784 30.3747 39.8794 28.2456C39.9763 26.1115 39.9989 25.4314 39.9989 20C39.9989 14.5686 39.9763 13.8869 39.8794 11.7544C39.7824 9.62512 39.4448 8.1704 38.9504 6.89984C38.4384 5.5848 37.7549 4.47008 36.6435 3.35696C35.5322 2.24384 34.4157 1.56064 33.1023 1.05008C31.8293 0.55568 30.3752 0.21648 28.2477 0.12112C26.1152 0.02416 25.4334 0 20.0021 0C14.5707 0 13.8885 0.02256 11.7549 0.12112Z"
+                        fill="white"
+                      />
+                    </g>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_17363">
+                      <rect width="40" height="40" fill="white" />
+                    </clipPath>
+                    <clipPath id="clip1_1_17363">
+                      <rect width="40" height="40" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+              <h4
+                class="font-medium text-base md:text-2xl leading-9 text-[#393e50] mb-4"
+              >
+                Instagram Marketing
+              </h4>
+            </div>
+            <div
+              class="col-span-12 md:col-span-6 lg:col-span-4 text-center p-5 hover:bg-white hover:shadow-[0px_20px_40px_rgba(0,0,0,0.05)] hover:rounded-[20px]"
+            >
+              <span
+                class="icon w-10 md:w-[80px] h-10 md:h-[80px] bg-[#3C61C9] flex items-center justify-center rounded-lg md:rounded-[20px] mx-auto mb-4"
+              >
+                <svg
+                  class="w-[20px] md:w-[40px] h-[20px] md:h-[40px]"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.5796 37.6667C27.6746 37.6667 35.9296 24.3307 35.9296 12.7663C35.9296 12.3876 35.9224 12.0106 35.9063 11.6351C37.5126 10.3957 38.8988 8.86113 40 7.10332C38.5295 7.80047 36.9472 8.26968 35.2872 8.48123C36.9815 7.39781 38.2823 5.68381 38.896 3.64073C37.285 4.65984 35.5226 5.37825 33.6848 5.76501C32.1872 4.06392 30.0552 3 27.6944 3C23.1624 3 19.4872 6.91924 19.4872 11.7503C19.4872 12.4371 19.5593 13.105 19.7002 13.7458C12.8794 13.3798 6.8313 9.89737 2.78358 4.60212C2.05454 5.93769 1.67108 7.45558 1.67236 9.0008C1.67236 12.0371 3.12114 14.7174 5.32439 16.2856C4.02114 16.2431 2.7465 15.8677 1.60764 15.191C1.60642 15.2277 1.60642 15.2635 1.60642 15.3028C1.60642 19.541 4.4352 23.0797 8.19032 23.8816C7.48506 24.0864 6.75731 24.1899 6.02634 24.1895C5.49846 24.1895 4.98398 24.1341 4.48398 24.0317C5.52878 27.509 8.55837 30.0394 12.1503 30.1101C9.34146 32.4578 5.80317 33.8562 1.95756 33.8562C1.30337 33.8568 0.649721 33.8163 0 33.7349C3.63203 36.2175 7.94471 37.6661 12.58 37.6661"
+                    fill="white"
+                  />
+                </svg>
+              </span>
+              <h4
+                class="font-medium text-base md:text-2xl leading-9 text-[#393e50] mb-4"
+              >
+                Twitter Marketing
+              </h4>
+            </div>
+            <div
+              class="col-span-12 md:col-span-6 lg:col-span-4 text-center p-5 hover:bg-white hover:shadow-[0px_20px_40px_rgba(0,0,0,0.05)] hover:rounded-[20px]"
+            >
+              <span
+                class="icon w-10 md:w-[80px] h-10 md:h-[80px] bg-[#3C61C9] flex items-center justify-center rounded-lg md:rounded-[20px] mx-auto mb-4"
+              >
+                <svg
+                  class="w-[20px] md:w-[40px] h-[20px] md:h-[40px]"
+                  width="40"
+                  height="41"
+                  viewBox="0 0 40 41"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1_17380)">
+                    <path
+                      d="M20.8862 33.3043L12.6797 33.1687C10.0227 33.1214 7.35898 33.2158 4.75401 32.7262C0.791256 31.9948 0.51052 28.4083 0.21676 25.4C-0.188012 21.1707 -0.0313125 16.8646 0.732544 12.6706C1.16377 10.3173 2.8608 8.91305 5.48521 8.76025C14.3445 8.20569 23.2627 8.27141 32.1024 8.53013C33.0359 8.55385 33.9759 8.68348 34.8965 8.83104C39.4406 9.55071 39.5514 13.6149 39.8459 17.0362C40.1397 20.4928 40.0157 23.9672 39.4542 27.4002C39.0037 30.2427 38.1419 32.6264 34.5047 32.8565C29.9477 33.1575 25.4952 33.3997 20.9252 33.3226C20.9254 33.3043 20.8992 33.3043 20.8862 33.3043ZM16.0616 26.1079C19.4957 24.3264 22.8643 22.5745 26.2789 20.805C22.8383 19.0234 19.4761 17.2716 16.0616 15.502V26.1079Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_17380">
+                      <rect
+                        width="40"
+                        height="40"
+                        fill="white"
+                        transform="translate(0 0.83667)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+              <h4
+                class="font-medium text-base md:text-2xl leading-9 text-[#393e50] mb-4"
+              >
+                Youtube Marketing
+              </h4>
+            </div>
+            <div
+              class="col-span-12 md:col-span-6 lg:col-span-4 text-center p-5 hover:bg-white hover:shadow-[0px_20px_40px_rgba(0,0,0,0.05)] hover:rounded-[20px]"
+            >
+              <span
+                class="icon w-10 md:w-[80px] h-10 md:h-[80px] bg-[#3C61C9] flex items-center justify-center rounded-lg md:rounded-[20px] mx-auto mb-4"
+              >
+                <svg
+                  class="w-[20px] md:w-[40px] h-[20px] md:h-[40px]"
+                  width="40"
+                  height="41"
+                  viewBox="0 0 40 41"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1_17387)">
+                    <path
+                      d="M17.5136 1.13577C10.3925 1.88419 3.30028 7.25023 3.01197 14.9321C2.82458 19.6203 4.82829 23.1365 9.61412 24.125C10.1619 21.908 10.2628 20.7077 10.2628 20.7077C10.2628 20.7077 8.15819 18.7307 7.94196 17.4739C6.18331 7.3632 20.4399 0.457956 27.9214 7.51853C33.082 12.4186 29.68 27.4858 21.3481 25.9184C13.3621 24.4215 25.2546 12.4327 18.8831 10.0745C13.708 8.15398 10.9547 15.9347 13.4053 19.7898C11.9638 26.4267 8.86453 32.6824 10.1187 40.9998C14.1981 38.2461 15.5676 32.9648 16.692 27.4576C18.7389 28.6155 19.8345 29.8299 22.4436 30.0135C32.0729 30.7054 37.4498 21.0466 36.138 12.122C34.956 4.21418 26.5087 0.189655 17.5136 1.13577Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_17387">
+                      <rect
+                        width="40"
+                        height="40"
+                        fill="white"
+                        transform="translate(0 0.83667)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+              <h4
+                class="font-medium text-base md:text-2xl leading-9 text-[#393e50] mb-4"
+              >
+                Pinterest Marketing
+              </h4>
+            </div>
+            <div
+              class="col-span-12 md:col-span-6 lg:col-span-4 text-center p-5 hover:bg-white hover:shadow-[0px_20px_40px_rgba(0,0,0,0.05)] hover:rounded-[20px]"
+            >
+              <span
+                class="icon w-10 md:w-[80px] h-10 md:h-[80px] bg-[#3C61C9] flex items-center justify-center rounded-lg md:rounded-[20px] mx-auto mb-4"
+              >
+                <svg
+                  class="w-[20px] md:w-[40px] h-[20px] md:h-[40px]"
+                  width="40"
+                  height="41"
+                  viewBox="0 0 40 41"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1_17394)">
+                    <path
+                      d="M9.08014 40.9986V14.0097H0.505422V40.9986H9.08104H9.08014ZM4.79457 10.3254C7.78413 10.3254 9.64533 8.25302 9.64533 5.66306C9.58937 3.0141 7.78413 0.999512 4.85143 0.999512C1.91671 0.999512 0 3.0141 0 5.66283C0 8.25278 1.86053 10.3252 4.73839 10.3252H4.7939L4.79457 10.3254ZM13.8264 40.9986H22.4004V25.9284C22.4004 25.1228 22.4564 24.3152 22.6829 23.7398C23.3025 22.1275 24.7133 20.4586 27.0826 20.4586C30.1846 20.4586 31.4262 22.9333 31.4262 26.5618V40.9986H40V25.524C40 17.2345 35.7704 13.377 30.129 13.377C25.5039 13.377 23.4726 16.0814 22.344 17.9234H22.4011V14.0106H13.8268C13.9387 16.5425 13.8261 40.9995 13.8261 40.9995L13.8264 40.9986Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_17394">
+                      <rect
+                        width="40"
+                        height="40"
+                        fill="white"
+                        transform="translate(0 0.83667)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+              <h4
+                class="font-medium text-base md:text-2xl leading-9 text-[#393e50] mb-4"
+              >
+                Linkedin Marketing
+              </h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Social Media Advertising Services -->
+
+      <!-- Recent Works -->
+      <section>
+        <div class="container py-4 md:py-16">
+          <div class="grid grid-cols-12 gap-4">
+            <div class="col-span-12">
+              <div class="max-w-[884px] mx-auto px-4 mb-[64px]">
+                <h2
+                  class="font-bold text-xl md:text-3xl lg:text-[40px] leading-[60px] text-[#393e50] text-center mb-5"
+                >
+                  Recent Works
+                </h2>
+                <p
+                  class="font-medium text-base leading-[22px] text-[#393e50]/40 text-center"
+                >
+                  Get a kick off on building your pages and bulletins! Pick a
+                  plan that accommodates your business needs and make it your
+                  own. Our drag and drop editors make it very simple for anybody
+                  to tweak formats like an ace.
+                </p>
+              </div>
+            </div>
+            <div class="col-span-12 md:col-span-4">
+              <div
+                class="img max-h-[276px] mb-6 rounded-[10px] overflow-hidden"
+              >
+                <img
+                  class="w-full h-full"
+                  src="./../assets/images/web-development/recent_item1.png"
+                  alt=""
+                />
+              </div>
+              <h2
+                class="font-medium text-xl leading-[30px] text-[#393e50] mb-4"
+              >
+                React, Next, REST & GraphQL Ecommerce
+              </h2>
+              <p
+                class="font-normal text-base leading-6 text-[rgba(57,62,80,0.4)]"
+              >
+                Pixer is a digital eCommerce Marketplace script build with
+                Laravel, Next JS, TypeScript & Tailwind.
+              </p>
+            </div>
+            <div class="col-span-12 md:col-span-4">
+              <div
+                class="img max-h-[276px] mb-6 rounded-[10px] overflow-hidden"
+              >
+                <img
+                  class="w-full h-full"
+                  src="./../assets/images/web-development/recent_item2.png"
+                  alt=""
+                />
+              </div>
+              <h2
+                class="font-medium text-xl leading-[30px] text-[#393e50] mb-4"
+              >
+                React, Next, REST & GraphQL Ecommerce
+              </h2>
+              <p
+                class="font-normal text-base leading-6 text-[rgba(57,62,80,0.4)]"
+              >
+                Pixer is a digital eCommerce Marketplace script build with
+                Laravel, Next JS, TypeScript & Tailwind.
+              </p>
+            </div>
+            <div class="col-span-12 md:col-span-4">
+              <div
+                class="img max-h-[276px] mb-6 rounded-[10px] overflow-hidden"
+              >
+                <img
+                  class="w-full h-full"
+                  src="./../assets/images/web-development/recent_item3.png"
+                  alt=""
+                />
+              </div>
+              <h2
+                class="font-medium text-xl leading-[30px] text-[#393e50] mb-4"
+              >
+                React, Next, REST & GraphQL Ecommerce
+              </h2>
+              <p
+                class="font-normal text-base leading-6 text-[rgba(57,62,80,0.4)]"
+              >
+                Pixer is a digital eCommerce Marketplace script build with
+                Laravel, Next JS, TypeScript & Tailwind.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Recent Works -->
+
+      <!-- plan every thing from sketch -->
+      <section>
+        <div class="max-w-[1184px] mx-auto px-4">
+          <h2
+            class="font-bold text-2xl md:text-[40px] leading-9 md:leading-[60px] text-[#393e50] text-center md:mb-20"
+          >
+            Plan Every Thing from Sketch
+          </h2>
+
+          <div class="flex justify-center flex-col lg:flex-row gap-4">
+            <div
+              class="card bg-white rounded-[20px] p-9 md:p-10 hover:shadow-[0px_25px_32px_rgba(48,167,215,0.08)] transition ease-in-out delay-500"
+            >
+              <p
+                class="font-medium text-xl md:text-2xl leading-9 text-[#393e50] mb-5"
+              >
+                Free
+              </p>
+              <p
+                class="font-light text-[30px] md:text-[40px] leading-9 text-[rgba(57,62,80,0.4)] mb-5"
+              >
+                $0/<sub>mo</sub>
+              </p>
+              <ul class="bg-[rgba(48,167,215,0.05)] p-[10px] mb-5">
+                <li
+                  class="font-normal text-xs md:text-sm text-[rgba(57,62,80,0.6)] leading-[21px] mb-[10px]"
+                >
+                  Reach up to 500k contacts
+                </li>
+                <li
+                  class="font-normal text-xs md:text-sm text-[rgba(57,62,80,0.6)] leading-[21px] mb-[10px]"
+                >
+                  Unlimited emails/mo
+                </li>
+                <li
+                  class="font-normal text-xs md:text-sm text-[rgba(57,62,80,0.6)] leading-[21px]"
+                >
+                  Unlimited Web Push
+                </li>
+              </ul>
+              <h5
+                class="font-medium text-sm md:text-base text-[#393e50] leading-6"
+              >
+                Others included Features
+              </h5>
+              <ul class="my-5">
+                <li
+                  class="font-normal text-xs md:text-sm leading-[21px] text-[rgba(57,62,80,0.6)] mb-[10px]"
+                >
+                  Professional Looking Email Templates
+                </li>
+                <li
+                  class="font-normal text-xs md:text-sm leading-[21px] text-[rgba(57,62,80,0.6)] mb-[10px]"
+                >
+                  Pre-built Automations & Workflows
+                </li>
+                <li
+                  class="font-normal text-xs md:text-sm leading-[21px] text-[rgba(57,62,80,0.6)] mb-[10px]"
+                >
+                  Popups & Signup Forms
+                </li>
+                <li
+                  class="font-normal text-xs md:text-sm leading-[21px] text-[rgba(57,62,80,0.6)] mb-[10px]"
+                >
+                  Segmentation & Customer Analytics
+                </li>
+                <li
+                  class="font-normal text-xs md:text-sm leading-[21px] text-[rgba(57,62,80,0.6)] mb-[10px]"
+                >
+                  A/B Testing
+                </li>
+              </ul>
+
+              <button
+                class="bg-[#30A7D7] rounded-lg font-semibold text-xs md:text-sm leading-5 text-white py-2 md:py-3 w-full mt-5"
+              >
+                Start
+              </button>
+            </div>
+            <div
+              class="card bg-white rounded-[20px] p-9 md:p-10 hover:shadow-[0px_25px_32px_rgba(48,167,215,0.08)] transition ease-in-out delay-500"
+            >
+              <p
+                class="font-medium text-xl md:text-2xl leading-9 text-[#393e50] mb-5"
+              >
+                Standard
+              </p>
+              <p
+                class="font-light text-[30px] md:text-[40px] leading-9 text-[rgba(57,62,80,0.4)] mb-5"
+              >
+                $150/<sub>mo</sub>
+              </p>
+              <ul class="bg-[rgba(48,167,215,0.05)] p-[10px] mb-5">
+                <li
+                  class="font-normal text-xs md:text-sm text-[rgba(57,62,80,0.6)] leading-[21px] mb-[10px]"
+                >
+                  Reach up to 50000 contacts
+                </li>
+                <li
+                  class="font-normal text-xs md:text-sm text-[rgba(57,62,80,0.6)] leading-[21px] mb-[10px]"
+                >
+                  Unlimited emails/mo
+                </li>
+                <li
+                  class="font-normal text-xs md:text-sm text-[rgba(57,62,80,0.6)] leading-[21px]"
+                >
+                  Unlimited Web Push
+                </li>
+              </ul>
+              <h5
+                class="font-medium text-sm md:text-base text-[#393e50] leading-6"
+              >
+                Others included Features
+              </h5>
+              <ul class="my-5">
+                <li
+                  class="font-normal text-xs md:text-sm leading-[21px] text-[rgba(57,62,80,0.6)] mb-[10px]"
+                >
+                  Customer Success Manager
+                </li>
+                <li
+                  class="font-normal text-xs md:text-sm leading-[21px] text-[rgba(57,62,80,0.6)] mb-[10px]"
+                >
+                  24/7 Priority Support
+                </li>
+                <li
+                  class="font-normal text-xs md:text-sm leading-[21px] text-[rgba(57,62,80,0.6)] mb-[10px]"
+                >
+                  A/B Testing
+                </li>
+                <li
+                  class="font-normal text-xs md:text-sm leading-[21px] text-[rgba(57,62,80,0.6)] mb-[10px]"
+                >
+                  Customer Support Via Email
+                </li>
+              </ul>
+
+              <button
+                class="bg-[#30A7D7] rounded-lg font-semibold text-xs md:text-sm leading-5 text-white py-2 md:py-3 w-full mt-5"
+              >
+                Start
+              </button>
+            </div>
+            <div
+              class="card bg-white rounded-[20px] p-9 md:p-10 hover:shadow-[0px_25px_32px_rgba(48,167,215,0.08)] transition ease-in-out delay-500"
+            >
+              <p
+                class="font-medium text-xl md:text-2xl leading-9 text-[#393e50] mb-5"
+              >
+                Premium
+              </p>
+              <p
+                class="font-light text-[30px] md:text-[40px] leading-9 text-[rgba(57,62,80,0.4)] mb-5"
+              >
+                $650/<sub>mo</sub>
+              </p>
+              <ul class="bg-[rgba(48,167,215,0.05)] p-[10px] mb-5">
+                <li
+                  class="font-normal text-xs md:text-sm text-[rgba(57,62,80,0.6)] leading-[21px] mb-[10px]"
+                >
+                  Reach up to 500k contacts
+                </li>
+                <li
+                  class="font-normal text-xs md:text-sm text-[rgba(57,62,80,0.6)] leading-[21px] mb-[10px]"
+                >
+                  Unlimited emails/mo
+                </li>
+                <li
+                  class="font-normal text-xs md:text-sm text-[rgba(57,62,80,0.6)] leading-[21px]"
+                >
+                  Unlimited Web Push
+                </li>
+              </ul>
+              <h5
+                class="font-medium text-xs md:text-base text-[#393e50] leading-6"
+              >
+                Others included Features
+              </h5>
+              <ul class="my-5">
+                <li
+                  class="font-normal text-xs md:text-sm leading-[21px] text-[rgba(57,62,80,0.6)] mb-[10px]"
+                >
+                  Advanced Reporting
+                </li>
+                <li
+                  class="font-normal text-xs md:text-sm leading-[21px] text-[rgba(57,62,80,0.6)] mb-[10px]"
+                >
+                  Customer Success Manager
+                </li>
+                <li
+                  class="font-normal text-xs md:text-sm leading-[21px] text-[rgba(57,62,80,0.6)] mb-[10px]"
+                >
+                  24/7 Priority Support
+                </li>
+              </ul>
+
+              <button
+                class="bg-[#30A7D7] rounded-lg font-semibold text-xs md:text-sm leading-5 text-white py-2 md:py-3 w-full mt-5"
+              >
+                Start
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- plan every thing from sketch -->
+
+      <!-- Custome Plan -->
+      <section class="custom_plan py-16">
+        <div class="container">
+          <div
+            class="flex items-center justify-center flex-col custom_plan_bg py-10 rounded-[40px]"
+          >
+            <p class="font-medium text-sm md:text-base text-white leading-6">
+              All you’ll ever need
+            </p>
+            <h3
+              class="font-medium text-xl md:text-[40px] leading-[60px] text-white mb-10"
+            >
+              Custome Plan
+            </h3>
+            <div
+              class="flex items-center justify-between max-w-[280px] md:max-w-[450px] w-full mx-auto relative"
+            >
+              <input
+                class="border w-full bg-white py-3 px-4 shadow-[0px_4px_40px_rgba(0,0,0,0.05)] rounded-lg focus-within:outline-none"
+                type="text"
+                placeholder="Your Email Here"
+              />
+              <span class="absolute top-[50%] right-3 -translate-y-[50%]">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.5766 7.29556L2.05121 1.07401C1.92508 1.01137 1.78471 0.987775 1.64639 1.00597C1.50806 1.02417 1.37747 1.08341 1.26977 1.17681C1.16207 1.27021 1.08168 1.39395 1.03794 1.53365C0.994194 1.67334 0.988892 1.82327 1.02265 1.96603L1.91564 5.73706L7.63166 7.99937L1.91564 10.2617L1.02265 14.0327C0.988257 14.1756 0.993116 14.3258 1.03666 14.4659C1.0802 14.6059 1.16062 14.73 1.26851 14.8235C1.37641 14.9171 1.50732 14.9763 1.64592 14.9942C1.78453 15.0122 1.92511 14.9881 2.05121 14.9247L14.5766 8.70318C14.7032 8.64038 14.8103 8.54084 14.8852 8.41621C14.9602 8.29158 15 8.147 15 7.99937C15 7.85174 14.9602 7.70716 14.8852 7.58253C14.8103 7.4579 14.7032 7.35836 14.5766 7.29556V7.29556Z"
+                    fill="#393E50"
+                    fill-opacity="0.4"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Custome Plan -->
+
+      <!-- footer -->
+      <section class="footer mt-[131px]">
+        <div class="container">
+          <div class="grid grid-cols-12 gap-4 pb-10 border-b border-[#A8ADB9]">
+            <div class="col-span-12 lg:col-span-5">
+              <a href="./../index.html">
+                <img
+                  class="max-w-[160px] lg:max-w-[330px] mx-auto lg:mr-auto lg:ml-0"
+                  src="../assets/images/footer/footer_logo.png"
+                  alt=""
+                />
+              </a>
+              <p
+                class="lg:max-w-[424px] py-10 font-normal text-base text-[#393e50]/[0.6] leading-6 text-center lg:text-left"
+              >
+                In publishing and graphic design, Lorem ipsum is a placeholder
+                text commonly used to demonstrate
+              </p>
+              <a
+                class="font-normal text-base text-[#393e50]/[0.6] leading-6 text-center lg:text-left block"
+                href="mailto:info@neumohive.xyz"
+                >info@neumohive.xyz</a
+              >
+            </div>
+            <div class="col-span-6 lg:col-span-2">
+              <h4
+                class="font-semibold text-base leading-6 text-[#393e50] mb-10"
+              >
+                Services
+              </h4>
+              <ul class="flex items-start justify-center gap-4 flex-col">
+                <li>
+                  <a
+                    class="font-normal text-base leading-6 text-[#393e50] hover:text-[#30A7D7] ease-in-out duration-500"
+                    href="./email-marketing.html"
+                    >Email Marketing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-normal text-base leading-6 text-[#393e50] hover:text-[#30A7D7] ease-in-out duration-500"
+                    href="./sms-marketing.html"
+                    >SMS Marketing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-normal text-base leading-6 text-[#393e50] hover:text-[#30A7D7] ease-in-out duration-500"
+                    href="./social-media-marketing.html"
+                    >Social Media Marketing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-normal text-base leading-6 text-[#393e50] hover:text-[#30A7D7] ease-in-out duration-500"
+                    href="./web-development.html"
+                    >Web Development</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-normal text-base leading-6 text-[#393e50] hover:text-[#30A7D7] ease-in-out duration-500"
+                    href="./video-marketing.html"
+                    >Video Marketing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-normal text-base leading-6 text-[#393e50] hover:text-[#30A7D7] ease-in-out duration-500"
+                    href="./seo.html"
+                    >SEO</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-span-6 lg:col-span-2">
+              <h4
+                class="font-semibold text-base leading-6 text-[#393e50] mb-10 text-right lg:text-left"
+              >
+                Comapny
+              </h4>
+              <ul
+                class="flex items-end lg:items-start justify-center gap-4 flex-col"
+              >
+                <li>
+                  <a
+                    class="font-normal text-base leading-6 text-[#393e50] hover:text-[#30A7D7] ease-in-out duration-500"
+                    href="./about-us.html"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-normal text-base leading-6 text-[#393e50] hover:text-[#30A7D7] ease-in-out duration-500"
+                    href="./case-studies.html"
+                    >Case Studies</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-normal text-base leading-6 text-[#393e50] hover:text-[#30A7D7] ease-in-out duration-500"
+                    href="./contact.html"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-span-12 lg:col-span-3">
+              <h4
+                class="font-semibold text-base leading-6 text-[#393e50] mb-10 text-center lg:text-left"
+              >
+                Our Address
+              </h4>
+              <p
+                class="font-normal text-base leading-6 text-[#393e50] mb-[14px] text-center lg:text-left"
+              >
+                198 West 21th Streat, South 721, New York, NY 10016
+              </p>
+              <ul
+                class="flex items-center gap-[15px] justify-center lg:justify-start"
+              >
+                <li>
+                  <a
+                    class="w-[30px] h-[30px] rounded-full bg-transparent hover:bg-[#3D5998] flex items-center justify-center group hover:shadow-[0px_3px_10px_rgba(0,0,0,.25)] ease-in-out duration-500"
+                    href="#"
+                  >
+                    <svg
+                      class="group-hover:fill-[#fff]"
+                      width="8"
+                      height="16"
+                      viewBox="0 0 8 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="group-hover:fill-[#fff] group-hover:!opacity-100 ease-in-out duration-500"
+                        opacity="0.4"
+                        d="M5.17237 4.83298V3.56797C5.1592 3.47018 5.1679 3.37069 5.19778 3.27665C5.22767 3.18261 5.27803 3.09637 5.34523 3.02412C5.41244 2.95188 5.49477 2.89542 5.58641 2.85882C5.67804 2.82223 5.77671 2.8064 5.87519 2.81248H7.63215V0.0979861H5.18116C4.7361 0.0610166 4.28834 0.121163 3.86881 0.274275C3.44928 0.427387 3.06804 0.669805 2.75141 0.984761C2.43478 1.29972 2.19029 1.6797 2.03497 2.09841C1.87964 2.51713 1.81708 2.96459 1.8517 3.40984V4.84176H0.279297V8.01306H1.86929V15.9194H5.03178V8.01306H7.37736L7.49156 6.76563L7.66722 4.84176L5.17237 4.83298Z"
+                        fill="#393E50"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="w-[30px] h-[30px] rounded-full bg-transparent hover:bg-white flex items-center justify-center group hover:shadow-[0px_3px_10px_rgba(0,0,0,.25)] ease-in-out duration-500"
+                    href="#"
+                  >
+                    <svg
+                      width="17"
+                      height="15"
+                      viewBox="0 0 17 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="group-hover:fill-[#1DA1F2] group-hover:!opacity-100 ease-in-out duration-500"
+                        opacity="0.4"
+                        d="M16.9468 2.24297C16.3162 2.52173 15.6466 2.70244 14.9614 2.77884C15.6796 2.35767 16.2199 1.68939 16.4813 0.898899C15.7994 1.29262 15.0574 1.57159 14.2851 1.72467C13.8106 1.22639 13.1988 0.880392 12.5273 0.730646C11.8557 0.5809 11.1548 0.634165 10.5136 0.883672C9.8724 1.13318 9.31986 1.56766 8.92617 2.13192C8.53248 2.69618 8.31544 3.36473 8.30259 4.05264C8.30481 4.31268 8.33423 4.57178 8.39042 4.82569C7.02051 4.76192 5.67909 4.41248 4.45218 3.79978C3.22527 3.18708 2.13998 2.32466 1.26598 1.26786C0.949462 1.79881 0.785297 2.4067 0.791568 3.02481C0.793467 3.58796 0.934868 4.14187 1.20314 4.63702C1.47141 5.13218 1.85819 5.55314 2.3289 5.8623C1.78124 5.84271 1.24583 5.6953 0.765295 5.43184V5.47576C0.767871 6.26811 1.04643 7.03481 1.55305 7.64404C2.05967 8.25326 2.76262 8.66695 3.54121 8.81398C3.25475 8.89192 2.95957 8.93324 2.66273 8.93697C2.44451 8.9387 2.22669 8.9181 2.01266 8.87547C2.23905 9.55652 2.67206 10.1501 3.25145 10.5736C3.83085 10.9971 4.52788 11.2296 5.24551 11.2386C4.01416 12.1862 2.50349 12.699 0.949741 12.6968C0.668628 12.6968 0.396351 12.6968 0.124023 12.6968C1.70144 13.6938 3.52886 14.2237 5.39489 14.2254C7.63309 14.263 9.81489 13.5224 11.5677 12.1301C13.3205 10.7378 14.5356 8.78011 15.0054 6.59143C15.1617 5.91736 15.2413 5.22776 15.2426 4.53579C15.2426 4.38645 15.2426 4.23711 15.2426 4.09656C15.9203 3.58927 16.4981 2.9608 16.9468 2.24297V2.24297Z"
+                        fill="#393E50"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="w-[30px] h-[30px] rounded-full bg-transparent hover:bg-[#125688] ease-in-out duration-500 flex items-center justify-center group hover:shadow-[0px_3px_10px_rgba(0,0,0,.25)]"
+                    href="#"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="group-hover:fill-[#fff] group-hover:!opacity-100 ease-in-out duration-500"
+                        opacity="0.4"
+                        d="M12.6161 0.375977H3.3745C2.60331 0.375977 1.86378 0.678235 1.31847 1.21625C0.773154 1.75426 0.466797 2.48397 0.466797 3.24483V12.3628C0.469114 13.1229 0.77623 13.8513 1.32104 14.3888C1.86585 14.9263 2.60403 15.2293 3.3745 15.2316H12.6161C13.3873 15.2316 14.1269 14.9294 14.6722 14.3913C15.2176 13.8533 15.5239 13.1236 15.5239 12.3628V3.24483C15.5239 2.48397 15.2176 1.75426 14.6722 1.21625C14.1269 0.678235 13.3873 0.375977 12.6161 0.375977V0.375977ZM13.4946 2.10942H13.8284V4.63159H11.2808V2.11809L13.4946 2.10942ZM5.88704 6.30437C6.13044 5.96455 6.45288 5.68732 6.82739 5.49599C7.20191 5.30465 7.61752 5.20478 8.03927 5.20478C8.46102 5.20478 8.87662 5.30465 9.25114 5.49599C9.62566 5.68732 9.9481 5.96455 10.1915 6.30437L10.3497 6.55572C10.5763 6.94294 10.6946 7.38265 10.6923 7.8298C10.6837 8.22218 10.5851 8.60754 10.404 8.957C10.223 9.30645 9.96396 9.61093 9.64663 9.8476C9.32929 10.0843 8.96185 10.247 8.57169 10.3236C8.18154 10.4001 7.77879 10.3886 7.39381 10.2898C7.00883 10.1909 6.65154 10.0074 6.34869 9.75295C6.04584 9.49848 5.8053 9.17967 5.64512 8.82042C5.48493 8.46117 5.40928 8.07081 5.42378 7.6786C5.43828 7.28638 5.54258 6.9025 5.72887 6.55572L5.88704 6.30437ZM14.1008 12.3714C14.1008 12.7484 13.949 13.11 13.6788 13.3765C13.4086 13.6431 13.0422 13.7929 12.6601 13.7929H3.41847C3.03708 13.7906 2.67199 13.6401 2.4023 13.374C2.13261 13.1079 1.98006 12.7477 1.97775 12.3714V6.30437H4.22671C4.16916 6.44021 4.11926 6.5791 4.07733 6.7204C3.97499 7.08164 3.92177 7.45472 3.91915 7.8298C3.91915 8.90789 4.35333 9.94182 5.12599 10.7041C5.89865 11.4665 6.94656 11.8947 8.03927 11.8947C9.13197 11.8947 10.1799 11.4665 10.9525 10.7041C11.7252 9.94182 12.1593 8.90789 12.1593 7.8298C12.1567 7.45472 12.1035 7.08164 12.0012 6.7204C11.9593 6.5791 11.9094 6.44021 11.8518 6.30437H14.1008V12.3714V12.3714Z"
+                        fill="#393E50"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- footer -->
+
+      <!-- tiny footer -->
+      <section class="tiny_footer py-[30px]">
+        <div class="container">
+          <div class="flex items-center justify-center">
+            <p
+              class="font-normal text-base leading-6 text-[rgba(57,62,80,0.4)]"
+            >
+              &copy; 2022 Your Company Name. All Rights Reserved
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- tiny footer -->
+
+      <!-- scroll top -->
+      <p class="totop animate-bounce w-9 lg:w-10 h-9 lg:h-w-10">
+        <a href="#top">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 11l3-3m0 0l3 3m-3-3v8m0-13a9 9 0 110 18 9 9 0 010-18z"
+            />
+          </svg>
+        </a>
+      </p>
+      <!-- scroll top -->
+
+      <!-- js -->
+      <script src="../assets/js/jquery.min.js"></script>
+      <script src="../assets/js/alpine.js"></script>
+      <script src="../assets/plugin/smooth_scroll/smooth_scroll.js"></script>
+      <script src="../assets/plugin/slick/slick.min.js"></script>
+      <script src="../assets/js/main.js"></script>
+      <script src="../assets/js/nav.js"></script>
+    </main>
+  </body>
+</html>
