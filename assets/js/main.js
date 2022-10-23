@@ -1,8 +1,5 @@
 $(document).ready(function () {
   // preloader
-  // $(window).on("load", function () {
-  //   $("#preloader ").fadeOut(500), $("#main").css({ overflow: "unset" });
-  // });
   $(window).on('load', function() { // makes sure the whole site is loaded 
     $('#status').fadeOut(); // will first fade out the loading animation 
     $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
@@ -60,7 +57,69 @@ $(document).ready(function () {
     ],
   });
 
+
+  $(".gellary_slider").slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+  });
+
+  $(".recent_work_slider").slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+
+
+
+    // show-more-less
+    $(".blog_item").showMoreItems({
+      startNum: 6,
+      afterNum: 3,
+      original: 6,
+      responsive: [
+        { breakpoint: 1280, settings: { startNum: 3, afterNum: 3 } },
+        { breakpoint: 600, settings: { startNum: 3, afterNum: 3 } },
+      ],
+    }),
+      // show-more-less
+
+    $("a[href=#top]").click(function () {
+      return $("body,html").animate({ scrollTop: 0 }, 600), 1;
+    });
+
+  $(window).scroll(function () {
+    $(this).scrollTop() > 50 ? $(".totop a").fadeIn() : $(".totop a").fadeOut();
+  });
+});
+
+$(document).ready(function (){
   // counter up
+
   //Check if an element was in a screen
   function isScrolledIntoView(elem) {
     var docViewTop = $(window).scrollTop();
@@ -108,63 +167,5 @@ $(document).ready(function () {
     }
   });
   // counter up
-
-  
-
-  $(".gellary_slider").slick({
-    dots: false,
-    infinite: true,
-    speed: 300,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-  });
-
-  $(".recent_work_slider").slick({
-    dots: false,
-    infinite: true,
-    speed: 300,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 769,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  });
-
-  // show-more-less
-  $(".blog_item").showMoreItems({
-    startNum: 6,
-    afterNum: 3,
-    original: 6,
-    responsive: [
-      { breakpoint: 1280, settings: { startNum: 3, afterNum: 3 } },
-      { breakpoint: 600, settings: { startNum: 3, afterNum: 3 } },
-    ],
-  }),
-    // show-more-less
-
-    $("a[href=#top]").click(function () {
-      return $("body,html").animate({ scrollTop: 0 }, 600), 1;
-    });
-
-  $(window).scroll(function () {
-    $(this).scrollTop() > 50 ? $(".totop a").fadeIn() : $(".totop a").fadeOut();
-  });
-});
+})
 
