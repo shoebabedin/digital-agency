@@ -1,10 +1,11 @@
 $(document).ready(function () {
-// preloader
+  // preloader
   $(window).on("load", function () {
     $("#preloader ").fadeOut(500), $("#main").css({ overflow: "unset" });
   });
   // preloader
-// sticky navbar
+
+  // sticky navbar
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
       $(".nav").addClass("sticky");
@@ -12,64 +13,9 @@ $(document).ready(function () {
       $(".nav").removeClass("sticky");
     }
   });
-// sticky navbar
+  // sticky navbar
 
-$(".logo_slider").slick({
-  dots: false,
-  infinite: true,
-  speed: 300,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  arrows: false,
-  responsive: [
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 3,
-      },
-    },
-  ],
-});
-
-
-    $(".project_slider").slick({
-      dots: false,
-      infinite: true,
-      speed: 300,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      variableWidth: true,
-      arrows: false,
-      responsive: [
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 1,
-            dots: true,
-          },
-        },
-      ],
-    });
-
- 
-
-  $(".gellary_slider").slick({
-    dots: false,
-    infinite: true,
-    speed: 300,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-  });
-
-
-  $(".recent_work_slider").slick({
+  $(".logo_slider").slick({
     dots: false,
     infinite: true,
     speed: 300,
@@ -80,43 +26,36 @@ $(".logo_slider").slick({
     arrows: false,
     responsive: [
       {
-        breakpoint: 769,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
         },
       },
     ],
   });
 
-    // show-more-less
-    $(".blog_item").showMoreItems({
-      startNum: 6,
-      afterNum: 3,
-      original: 6,
-      responsive: [
-        { breakpoint: 1280, settings: { startNum: 3, afterNum: 3 } },
-        { breakpoint: 600, settings: { startNum: 3, afterNum: 3 } },
-      ],
-    }),
-      // show-more-less
-
-  $("a[href=#top]").click(function () {
-    return $("body,html").animate({ scrollTop: 0 }, 600), 1;
+  $(".project_slider").slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    variableWidth: true,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          dots: true,
+        },
+      },
+    ],
   });
 
-  $(window).scroll(function () {
-    $(this).scrollTop() > 50 ? $(".totop a").fadeIn() : $(".totop a").fadeOut();
-  });
-});
-
-// counter up
-$(document).ready(function ($) {
+  // counter up
   //Check if an element was in a screen
   function isScrolledIntoView(elem) {
     var docViewTop = $(window).scrollTop();
@@ -163,5 +102,64 @@ $(document).ready(function ($) {
       countUp();
     }
   });
+  // counter up
+
+  
+
+  $(".gellary_slider").slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+  });
+
+  $(".recent_work_slider").slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+
+  // show-more-less
+  $(".blog_item").showMoreItems({
+    startNum: 6,
+    afterNum: 3,
+    original: 6,
+    responsive: [
+      { breakpoint: 1280, settings: { startNum: 3, afterNum: 3 } },
+      { breakpoint: 600, settings: { startNum: 3, afterNum: 3 } },
+    ],
+  }),
+    // show-more-less
+
+    $("a[href=#top]").click(function () {
+      return $("body,html").animate({ scrollTop: 0 }, 600), 1;
+    });
+
+  $(window).scroll(function () {
+    $(this).scrollTop() > 50 ? $(".totop a").fadeIn() : $(".totop a").fadeOut();
+  });
 });
-// counter up
+
