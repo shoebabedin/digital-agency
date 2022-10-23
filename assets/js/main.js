@@ -106,15 +106,18 @@ $(document).ready(function () {
         { breakpoint: 600, settings: { startNum: 3, afterNum: 3 } },
       ],
     }),
+
       // show-more-less
 
     $("a[href=#top]").click(function () {
       return $("body,html").animate({ scrollTop: 0 }, 600), 1;
     });
 
-  $(window).scroll(function () {
-    $(this).scrollTop() > 50 ? $(".totop a").fadeIn() : $(".totop a").fadeOut();
-  });
+  // $(window).scroll(function () {
+  //   $(this).scrollTop() > 50 ? $(".totop a").fadeIn() : $(".totop a").fadeOut();
+  // });
+  
+
 });
 
 $(document).ready(function (){

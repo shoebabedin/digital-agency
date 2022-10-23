@@ -46,9 +46,37 @@ input[type="date"]::-webkit-inner-spin-button {
   -moz-appearance: textfield;
 }
 
-.totop {
+/* totop */
+#button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #30a7d7;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
   position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
 }
+
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+/* totop */
 /* common css */
 
 /* preloader */
@@ -465,6 +493,24 @@ nav .service:hover .service_dropdown {
   background-size: cover;
 }
 /* contact_banner */
+
+/* show more and less */
+a.showMore {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 20px;
+  color: #0077c8;
+  text-decoration: none;
+}
+a.showMore::after {
+  content: "+ VIEW MORE";
+}
+a.showMore.showLess::after {
+  content: "- VIEW LESS";
+}
+/* show more and less */
 
 /* media query */
 @media (max-width: 600px) {
