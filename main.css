@@ -77,6 +77,18 @@ input[type="date"]::-webkit-inner-spin-button {
   visibility: visible;
 }
 /* totop */
+
+/* image zoom animate */
+.zoom-effect .zoom-img {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.zoom-effect:hover .zoom-img {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+/* image zoom animate */
 /* common css */
 
 /* preloader */

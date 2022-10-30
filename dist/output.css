@@ -811,6 +811,10 @@ video {
   max-height: 276px;
 }
 
+.max-h-\[218px\] {
+  max-height: 218px;
+}
+
 .w-52 {
   width: 13rem;
 }
@@ -1078,6 +1082,10 @@ video {
 
 .rounded-\[14px\] {
   border-radius: 14px;
+}
+
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .border {
@@ -1613,6 +1621,18 @@ input[type="date"]::-webkit-inner-spin-button {
 }
 
 /* totop */
+
+/* image zoom animate */
+
+.zoom-effect .zoom-img {
+  transition: 0.4s ease;
+}
+
+.zoom-effect:hover .zoom-img {
+  transform: scale(1.08);
+}
+
+/* image zoom animate */
 
 /* common css */
 
