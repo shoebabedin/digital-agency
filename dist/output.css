@@ -652,6 +652,11 @@ video {
   margin-bottom: 30px;
 }
 
+.my-\[17px\] {
+  margin-top: 17px;
+  margin-bottom: 17px;
+}
+
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -795,6 +800,10 @@ video {
   height: 20px;
 }
 
+.max-h-\[218px\] {
+  max-height: 218px;
+}
+
 .max-h-\[44px\] {
   max-height: 44px;
 }
@@ -809,10 +818,6 @@ video {
 
 .max-h-\[276px\] {
   max-height: 276px;
-}
-
-.max-h-\[218px\] {
-  max-height: 218px;
 }
 
 .w-52 {
@@ -1084,10 +1089,6 @@ video {
   border-radius: 14px;
 }
 
-.rounded {
-  border-radius: 0.25rem;
-}
-
 .border {
   border-width: 1px;
 }
@@ -1245,11 +1246,6 @@ video {
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-}
-
-.py-\[17px\] {
-  padding-top: 17px;
-  padding-bottom: 17px;
 }
 
 .py-28 {
@@ -1638,13 +1634,17 @@ input[type="date"]::-webkit-inner-spin-button {
 
 /* preloader */
 
-#main {
+/* #main {
+  overflow: hidden;
+} */
+
+body {
   overflow: hidden;
 }
 
 /* Code for preloader */
 
-.cssload-preloader {
+/* .cssload-preloader {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1654,6 +1654,18 @@ input[type="date"]::-webkit-inner-spin-button {
   background: #fff;
   width: 100%;
   height: 100%;
+} */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  /* change if the mask should have another color then white */
+  z-index: 99;
+  /* makes sure it stays on top */
 }
 
 .cssload-preloader > .cssload-preloader-box {
@@ -1833,7 +1845,7 @@ nav .service:hover .service_dropdown {
 
 .hero {
   /* background: url("assets/images/hero/hero_bg.png"); */
-  background: url("./../assets/images/hero/hero_bg.png");
+  background: url("./../assets/images/hero/hero_bg.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1918,8 +1930,8 @@ nav .service:hover .service_dropdown {
 /* custom plan */
 
 .custom_plan_bg {
-  background: url("./../assets/images/custom_plan/custom_plan_bg.png") no-repeat
-    center;
+  background: url("./../assets/images/custom_plan/custom-plan-bg.webp")
+    no-repeat center;
   background-size: cover;
 }
 
@@ -2041,7 +2053,7 @@ nav .service:hover .service_dropdown {
 /* contact_banner */
 
 .contact_banner {
-  background: url("./../assets/images/footer/footer-hero.png") no-repeat center;
+  background: url("./../assets/images/footer/footer-hero.webp") no-repeat center;
   background-size: cover;
 }
 
@@ -2201,6 +2213,11 @@ a.showMore.showLess::after {
     grid-row: span 2 / span 2;
   }
 
+  .md\:mx-\[28px\] {
+    margin-left: 28px;
+    margin-right: 28px;
+  }
+
   .md\:mb-10 {
     margin-bottom: 2.5rem;
   }
@@ -2328,11 +2345,6 @@ a.showMore.showLess::after {
 
   .md\:p-10 {
     padding: 2.5rem;
-  }
-
-  .md\:px-\[28px\] {
-    padding-left: 28px;
-    padding-right: 28px;
   }
 
   .md\:py-16 {

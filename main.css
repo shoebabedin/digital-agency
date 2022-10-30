@@ -92,22 +92,24 @@ input[type="date"]::-webkit-inner-spin-button {
 /* common css */
 
 /* preloader */
-#main {
+/* #main {
+  overflow: hidden;
+} */
+body {
   overflow: hidden;
 }
-
 /* Code for preloader */
 
-.cssload-preloader {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  z-index: 10;
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: #fff;
   width: 100%;
   height: 100%;
+  z-index: 99;
 }
 
 .cssload-preloader > .cssload-preloader-box {
@@ -318,7 +320,7 @@ nav .service:hover .service_dropdown {
 /* hero */
 .hero {
   /* background: url("assets/images/hero/hero_bg.png"); */
-  background: url("./../assets/images/hero/hero_bg.png");
+  background: url("./../assets/images/hero/hero_bg.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -392,8 +394,8 @@ nav .service:hover .service_dropdown {
 
 /* custom plan */
 .custom_plan_bg {
-  background: url("./../assets/images/custom_plan/custom_plan_bg.png") no-repeat
-    center;
+  background: url("./../assets/images/custom_plan/custom-plan-bg.webp")
+    no-repeat center;
   background-size: cover;
 }
 /* custom plan */
@@ -501,7 +503,7 @@ nav .service:hover .service_dropdown {
 
 /* contact_banner */
 .contact_banner {
-  background: url("./../assets/images/footer/footer-hero.png") no-repeat center;
+  background: url("./../assets/images/footer/footer-hero.webp") no-repeat center;
   background-size: cover;
 }
 /* contact_banner */
