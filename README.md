@@ -1,4 +1,4 @@
-# Grand Prince Hotel Template
+# Digital Agency Template
 
 A brief description of what this project does and who it's for
 
