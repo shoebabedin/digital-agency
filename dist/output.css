@@ -1644,28 +1644,16 @@ body {
 
 /* Code for preloader */
 
-/* .cssload-preloader {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  z-index: 10;
-  background: #fff;
-  width: 100%;
-  height: 100%;
-} */
-
 #preloader {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #fff;
-  /* change if the mask should have another color then white */
+  background: #fff;
+  width: 100%;
+  height: 100%;
   z-index: 99;
-  /* makes sure it stays on top */
 }
 
 .cssload-preloader > .cssload-preloader-box {
@@ -1840,6 +1828,10 @@ nav .service:hover .service_dropdown {
 }
 
 /* nav */
+
+/* gsap animation */
+
+/* gsap animation */
 
 /* hero */
 
