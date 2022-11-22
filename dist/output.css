@@ -740,6 +740,10 @@ video {
   margin-bottom: 23px;
 }
 
+.mt-28 {
+  margin-top: 7rem;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -812,12 +816,20 @@ video {
   max-height: 86px;
 }
 
+.max-h-\[636px\] {
+  max-height: 636px;
+}
+
 .max-h-\[208px\] {
   max-height: 208px;
 }
 
 .max-h-\[276px\] {
   max-height: 276px;
+}
+
+.max-h-\[700px\] {
+  max-height: 700px;
 }
 
 .w-52 {
