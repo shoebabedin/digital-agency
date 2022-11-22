@@ -956,5 +956,17 @@
         $("html, body").animate({ scrollTop: 0 }, "300");
       });
     </script>
+
+    <script>
+           $(".blog_item").showMoreItems({
+        startNum: 6,
+        afterNum: 3,
+        original: 6,
+        responsive: [
+          { breakpoint: 1280, settings: { startNum: 3, afterNum: 3 } },
+          { breakpoint: 600, settings: { startNum: 3, afterNum: 3 } },
+        ],
+      }),
+    </script>
   </body>
 </html>

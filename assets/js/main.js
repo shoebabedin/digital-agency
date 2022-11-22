@@ -94,34 +94,6 @@ $(document).ready(function () {
     ],
   });
 
-
-
-    // show-more-less
-    $(".blog_item").showMoreItems({
-      startNum: 6,
-      afterNum: 3,
-      original: 6,
-      responsive: [
-        { breakpoint: 1280, settings: { startNum: 3, afterNum: 3 } },
-        { breakpoint: 600, settings: { startNum: 3, afterNum: 3 } },
-      ],
-    }),
-
-
-      // show-more-less
-
-    $("a[href=#top]").click(function () {
-      return $("body,html").animate({ scrollTop: 0 }, 600), 1;
-    });
-
-  // $(window).scroll(function () {
-  //   $(this).scrollTop() > 50 ? $(".totop a").fadeIn() : $(".totop a").fadeOut();
-  // });
-  
-
-});
-
-$(document).ready(function (){
   // counter up
 
   //Check if an element was in a screen
@@ -171,5 +143,16 @@ $(document).ready(function (){
     }
   });
   // counter up
-})
+
+
+
+    // $("a[href=#top]").click(function () {
+    //   return $("body,html").animate({ scrollTop: 0 }, 600), 1;
+    // });
+
+  // $(window).scroll(function () {
+  //   $(this).scrollTop() > 50 ? $(".totop a").fadeIn() : $(".totop a").fadeOut();
+  // });
+  
+});
 
