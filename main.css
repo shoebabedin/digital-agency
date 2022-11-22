@@ -324,7 +324,7 @@ nav .service:hover .service_dropdown {
 /* hero */
 .hero {
   /* background: url("assets/images/hero/hero_bg.png"); */
-  background: url("./../assets/images/hero/hero_bg.webp");
+  background: url("./../assets/images/hero/hero-bg.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
