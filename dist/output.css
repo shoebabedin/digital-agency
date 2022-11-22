@@ -975,10 +975,6 @@ video {
   grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 
-.flex-row {
-  flex-direction: row;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -1832,10 +1828,6 @@ nav .service:hover .service_dropdown {
 }
 
 /* nav */
-
-/* gsap animation */
-
-/* gsap animation */
 
 /* hero */
 

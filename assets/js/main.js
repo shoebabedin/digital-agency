@@ -8,13 +8,27 @@ $(document).ready(function () {
   // preloader
 
   // sticky navbar
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
-      $(".nav").addClass("sticky");
-    } else {
-      $(".nav").removeClass("sticky");
-    }
-  });
+  // $(window).scroll(function () {
+  //   if ($(this).scrollTop() > 100) {
+  //     $(".nav").addClass("sticky");
+  //   } else {
+  //     $(".nav").removeClass("sticky");
+  //   }
+  // });
+
+  var contentNav = $('.nav').offset().top;
+    var stickyNav = function () {
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop > 300) {
+            $('.nav').addClass('sticky');
+        } else {;
+            $('.nav').removeClass('sticky')
+        }
+    };
+    stickyNav();
+    $(window).scroll(function () {
+        stickyNav();
+    });
   // sticky navbar
 
   $(".logo_slider").slick({
