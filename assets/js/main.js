@@ -8,15 +8,7 @@ $(document).ready(function () {
   // preloader
 
   // sticky navbar
-  // $(window).scroll(function () {
-  //   if ($(this).scrollTop() > 100) {
-  //     $(".nav").addClass("sticky");
-  //   } else {
-  //     $(".nav").removeClass("sticky");
-  //   }
-  // });
-
-  var contentNav = $('.nav').offset().top;
+   var contentNav = $('.nav').offset().top;
     var stickyNav = function () {
         var scrollTop = $(window).scrollTop();
         if (scrollTop > 300) {
@@ -110,6 +102,14 @@ $(document).ready(function () {
 
   // counter up
 
+    // Show More Item
+	$('.blog_item').showMoreItems({
+		startNum: 6,
+		afterNum: 3,
+		moreText: 'Load More',
+  		noMoreText: 'No More'
+	});
+
   //Check if an element was in a screen
   function isScrolledIntoView(elem) {
     var docViewTop = $(window).scrollTop();
@@ -157,6 +157,8 @@ $(document).ready(function () {
     }
   });
   // counter up
+
+
 
 
 
